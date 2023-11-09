@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="Page" class="">
+    </div>
+    <div class="mask" id="Mask">
+        <div class="mask_top"></div>
+        <div class="mask_bottom"></div>
+    </div>
+    <div class="frame" id="Frame">
+        <div class="frame_line frame_line-left"></div>
+        <div class="frame_line frame_line-right"></div>
+        <div class="frame_line frame_line-top"></div>
+        <div class="frame_line frame_line-bottom"></div>
+    </div>
+    <header class="siteHeader" id="SiteHeader">
+        <h1 class="siteHeader_tittle">Andrés Cornejo</h1>
+        <p class="siteHeader_label">Bioquímico & Developer</p>
+        <nav class="siteHeader_nav" x-data>
+            <ol>
+                <li :class="{ 'is-selected': $store.app.currentPath === '/' }" class="is-selected">
+                    
+                    <a class="_text" href="/">Home</a>
+                </li>
+                <li :class="{ 'is-selected': $store.app.currentPath === '/projects/' }" class="">
+                    
+                    <a class="_text" href="/projects/">Proyectos</a>
+                </li>
+                <li :class="{ 'is-selected': $store.app.currentPath === '/info/' }">
+                    
+                    <a class="_text" href="/info/">Info</a>
+                </li>
+                <li :class="{ 'is-selected': $store.app.currentPath === '/contact/' }" class="">
+                    
+                    <a class="_text" href="/contact/">Contacto</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <main class="content" id="Content" data-scroll="area">
+        <div class="content_inner" data-scroll="target" style="transform: translate3d(0px, 0px, 0px);">
+            <section class="page" data-page="home" style="display: block; opacity: 1;">
+                <div class="page_content home"><p class="home_aboutme">
+                    <span>Nací en 1995</span>
+                    <span>en Aguascalientes, México.</span>
+                    <span>Creo en el aprendizaje</span>
+                    <span>el diseño web</span>
+                    <span>y la coalición del arte</span>
+                    <span> y la tecnología.</span>
+                    <span>Tengo la misión</span>
+                    <span>de presentar</span>
+                    <span>las posibilidades</span>
+                    <span>del diseño web,</span>
+                    <span>Estoy buscando</span>
+                    <span>nuevas formas de expresió</span>
+                </p>
+            </div>
+        </section>
+        <section class="page" data-page="projects" style="display: none; opacity: 0;">
+            <div class="page_content project">
+                <div class="project_section">
+                    <h2 class="project_heading">■ Proyectos (Design &amp; Develop)</h2>
+                    <div class="project_list">
+                        <a class="project_item text-btn" href="https://midnight-grand-orchestra.jp/starpeggio/" target="_blank">
+                            <div class="project_title">Aquí pondría un proyecto si tuviera uno</div>
+                            <div class="project_info">2023 / Commission / Special</div>
+                        
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+</body>
+</html>

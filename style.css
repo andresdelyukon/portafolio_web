@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: url('tu-imagen-de-fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  
+  /* Estilos del encabezado */
+  .siteHeader {
+    background-color: #333;
+    text-align: left;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+  }
+  
+  .siteHeader_title {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .siteHeader_label {
+    font-size: 26px;
+    font-family: "Neue Montreal";
+  }
+  
+  .siteHeader_nav ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    justify-content: left;
+    display: block;
+    margin: 10px;
+    }
+  
+  .siteHeader_nav li {
+    margin: 0 ;
+  }
+  
+  .siteHeader_nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  /* Estilos del contenido principal */
+  .content {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: right;
+  }
+  
+  .page_content {
+    text-align: right;
+    margin: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Estilos de enlaces */
+  a {
+    text-decoration: none;
+    color: #0078d4;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  .home_aboutme span {
+    display: block;
+}
+
